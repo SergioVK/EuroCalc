@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" >
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" >
+        <EditText android:id="@+id/resultado" android:layout_width="fill_parent" android:layout_height="wrap_content" android:enabled="true" android:inputType="text" />
+    </LinearLayout>
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" >
+        <Button android:id="@+id/euros2pesetas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m_euros2pesetas" />
+        <Button android:id="@+id/pesetas2euros" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/m_pesetas2euros" />
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" >
+
+        <TableRow>
+            <Button android:id="@+id/boton1" android:layout_width="106dip" android:layout_height="66dip" android:text="@string/n1" />
+            <Button android:id="@+id/boton2" android:layout_width="106dip" android:layout_height="66dip" android:text="@string/n2" />
+            <Button android:id="@+id/boton3" android:layout_width="106dip" android:layout_height="66dip" android:text="@string/n3" />
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/boton4" android:layout_height="66dip" android:text="@string/n4" />
+            <Button android:id="@+id/boton5" android:layout_height="66dip" android:text="@string/n5" />
+            <Button android:id="@+id/boton6" android:layout_height="66dip" android:text="@string/n6" />
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/boton7" android:layout_height="66dip" android:text="@string/n7" />
+            <Button android:id="@+id/boton8" android:layout_height="66dip" android:text="@string/n8" />
+            <Button android:id="@+id/boton9" android:layout_height="66dip" android:text="@string/n9" />
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/botonC" android:layout_height="66dip" android:text="@string/C" />
+            <Button android:id="@+id/boton0" android:layout_height="66dip" android:text="@string/n0" />
+            <Button android:id="@+id/botonPunto" android:layout_width="66dip" android:layout_height="66dip" android:text="@string/punto" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" >
+  		<LinearLayout android:id="@+id/llAll" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0dip" android:layout_weight="1.0" />
+  			<com.google.ads.AdView android:id="@+id/Ad" android:layout_width="fill_parent" android:layout_height="wrap_content" ads:adSize="BANNER" ads:adUnitId="@string/AdMob" ads:loadAdOnCreate="true" android:gravity="center" />
+		</LinearLayout>
+</LinearLayout>

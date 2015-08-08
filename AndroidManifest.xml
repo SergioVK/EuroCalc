@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+    package="com.Sergio_VK.EuroCalculadora" 
+    android:versionCode="2" 
+    android:versionName="1.0.0.1" >
+    <uses-sdk android:minSdkVersion="4" />
+    <supports-screens
+ 		android:largeScreens="true"
+ 		android:normalScreens="true"
+ 		android:smallScreens="true"
+ 		android:anyDensity="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:label="@string/app_name" android:icon="@drawable/iconoeuro" android:allowBackup="true">
+        <activity android:name="com.Sergio_VK.EuroCalculadora.EuroCal" android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>		
+		<activity android:name="com.google.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <meta-data android:value="a14d79e9b0ccb1d" android:name="ADMOB_PUBLISHER_ID" />
+		<meta-data android:value="a14d79e9b0ccb1d" android:name="ADMOB_INTERSTITIAL_PUBLISHER_ID" />
+		<meta-data android:value="true" android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" />
+    </application>
+</manifest>
